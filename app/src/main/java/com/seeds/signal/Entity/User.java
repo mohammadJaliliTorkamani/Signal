@@ -7,16 +7,18 @@ public class User {
     private String image;
     private long secretKey;
     private String username;//id
+    private String password;
     private String registerTime;
     private int permission;
 
-    public User(int id, String name, String lastName, String image, long secretKey, String username, String registerTime, int permission) {
+    public User(int id, String name, String lastName, String image, long secretKey, String username, String password, String registerTime, int permission) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.image = image;
         this.secretKey = secretKey;
         this.username = username;
+        this.password = password;
         this.registerTime = registerTime;
         this.permission = permission;
     }
@@ -67,6 +69,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getRegisterTime() {
