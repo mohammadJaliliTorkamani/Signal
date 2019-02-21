@@ -9,7 +9,7 @@ public interface EncryptionOperation {
 
     long generatePrime();
 
-    long computePrivateKey();
+    long calculatePrivateKey();
 
     long calculatePublicKey(long G, long Prime, long PrivateKey);
 

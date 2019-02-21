@@ -26,7 +26,7 @@ public class Encryption implements EncryptionOperation {
     }
 
     @Override
-    public long computePrivateKey() {
+    public long calculatePrivateKey() {
         return 0;
     }
 
